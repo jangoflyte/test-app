@@ -5,10 +5,10 @@ function App() {
   const [header, setHeader] = useState('Hello World!');
   return (
     <div className="App">
-      <h1>{header}</h1>
-      <button onClick={() => {setHeader('Hello Galaxy!')}}>Click me</button>
+      <h1 className="baseline">{header}</h1>
+      <button className="mainButton" onClick={() => {setHeader('Hello Galaxy!')}}>Click me</button>
       <Links/>
-      {/* <Forms/> */}
+      <Forms/>
       <PersonList/>
     </div>
   );
